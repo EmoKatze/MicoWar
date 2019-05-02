@@ -43,7 +43,7 @@ public class Proto {
             this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             this.setLocationRelativeTo(null);
             this.pack();
-            this.setSize(1000, 1000);
+            this.setSize(500, 500);
             this.setVisible(true);
         }
         public void start() {
@@ -189,6 +189,13 @@ public class Proto {
 
         }
 
+        private class Menu {        //TODO: Menu structure
+            String menutext;
+            public Menu(String menutext){
+                this.menutext = menutext;
+            }
+        }
+
 
         void initScreen(){
             for(int i = 0 ; i < 8 ; i++){
@@ -310,9 +317,11 @@ public class Proto {
             }
 
         }
-        public void selectTile(int x, int y) {
+        public Menu selectTile(int x, int y) {
+            if(screen[x][y].isSomeoneStanding()){
 
-
+            }
+            return null; //TODO: This
         }
 
         //GAMELOGIC, Playable over system.out ?
@@ -340,7 +349,7 @@ public class Proto {
             //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
             frame.add(textPane);
-            textPane.setFont(new Font("Monospaced", Font.PLAIN,30)); //monospaced,0,10 default
+            textPane.setFont(new Font("Monospaced", Font.PLAIN,20)); //monospaced,0,10 default
             //frame.pack();
             //frame.setSize(400,400);
             frame.setBackground(Color.LIGHT_GRAY);

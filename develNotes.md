@@ -3,6 +3,7 @@ Developer's Notes
 
 Game specification
 ------------------
+
 Turn:
 - choose which unit to perform an action on with cursor
 - choose between move, attack and defensive action
