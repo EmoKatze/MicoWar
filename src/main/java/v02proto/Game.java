@@ -8,7 +8,7 @@ public class Game {
     static Tile[][] board = new Tile[8][8];
     static int turn = 1;
     static int[] cursor = {0,0};
-
+    static int ap=1;
 
     public static void main(String[] args) {
         startGame();
@@ -20,8 +20,9 @@ public class Game {
 
         boolean gameOver = false;
         for(turn = 1 ; !gameOver ; turn++){
-            //makeAMove(whosTurn()); //TODO
+            ap = turn;
             draw();
+            makeTurn(whosTurn()); //TODO
             gameOver = true;
             //TEST 123456
         }
@@ -31,29 +32,28 @@ public class Game {
         StringBuilder sb = new StringBuilder();
         for(int i = 0 ; i < 8 ; i++){
             for(int j = 0 ; j < 8 ; j++){
-
                 if(board[j][i].isSomeoneStanding()){
                     sb.append(""+board[j][i].getTextureChar()+board[j][i].getStandingUnit().getChar());
-                    if(cursor[0]==i&&cursor[1]==j){
-                        sb.append("C");
-                    } else {
+                    //if(cursor[0]==i&&cursor[1]==j){
+                    //    sb.append("C");
+                    //} else {
                         sb.append(" ");
-                    }
+                    //}
                 } else {
                     sb.append(board[j][i].getTextureChar());
-                    if(cursor[0]==i&&cursor[1]==j){
-                        sb.append("C ");
-                    } else {
+                    //if(cursor[0]==i&&cursor[1]==j){
+                    //    sb.append("C ");
+                    //} else {
                         sb.append("  ");
-                    }
+                    //}
                 }
 
 
             }
             sb.append("\n");
         }
-        sb.append("\nCursorTxt:");
-        sb.append(board[cursor[0]][cursor[1]].getCursorText());
+        //sb.append("\nCursorTxt:");
+        //sb.append(board[cursor[0]][cursor[1]].getCursorText());
 
 
         System.out.println(sb.toString());
@@ -65,24 +65,65 @@ public class Game {
                 board[i][j] = new Tile('.');
             }
         }
-        board[1][1].setStandingUnit(new Tile.Unit());
-        board[6][6].setStandingUnit(new Tile.Unit());
+        board[1][1].setStandingUnit(new Tile.Unit(players[0]));
+        board[6][6].setStandingUnit(new Tile.Unit(players[1]));
     }
 
-    static void makeAMove(int player){
-        System.out.println("Current player: "+players[player]+" : "+player);
-        Scanner sc = new Scanner(System.in);
-        Tile selected = chooseTile(player);
+    static void makeTurn(int player){
+        System.out.println("current player: "+players[player]+" : "+player);
+        while(ap > 0){
+            System.out.println("what do you want to do?");
+            System.out.println(""
+                    + "m = move\n"
+                    + "a = attack\n"
+                    + "s = special ability\n"
+                    + "0 = skip turn\n"
+                    + "f = quit\n"
+                    + "r = replay\t hier können weitere commands hin\n"
+                    + "");
+            Scanner sc = new Scanner(System.in);
+            String inn = sc.nextLine();
+            char in = inn.charAt(0);
+            System.out.println(in+"\n");
+            switch (in){
+                case 'm' : move(player);
+                    break;
+                case 'a' :  System.out.println("in welche Richtung? n,w,e,s");
+                    String directio = sc.nextLine();
+                    char dir = directio.charAt(0);
+                    attack(player ,dir);
+                    break;
+                case 's' :
+                    System.out.println("Special Ability");
+                    break;
+                case '0' : System.out.println("Turn Skipped");
+                    break;
+                case 'f' :
+                    System.out.println("G A M E O V E R");
+                    break;
+            }
+            ap += -1;
+            System.out.println("*makeTurn: new ap: "+ap);
+        }
+    }
+
+    private static void attack(int player, char dir) {
+        //TODO
+    }
+
+    private static void move(int player) {
+        //TODO
     }
 
     private static Tile chooseTile(int player) {
+        boolean isselected = false;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Bitte koordinaten des Tiles eingeben: x [leerz] y");
+        System.out.println("enter coordinates of the tile: x [leerz] y");
         String ip = sc.nextLine();
         String[] input = ip.split(" ");
         int x = Integer.parseInt(input[0]);
         int y = Integer.parseInt(input[1]);
-        System.out.println("chooseTile: "+board[x][y].toString());
+        System.out.println("*chooseTile: "+board[x][y].toString()+"x:"+x+" y:"+y);
         return board[x][y];
     }
 
@@ -133,6 +174,7 @@ public class Game {
 
 
         private static class Unit{
+            public char tx;
             private int atk,hp,mvmt;
             public String text = "Default Unit";
             public String getText() {
@@ -148,9 +190,10 @@ public class Game {
                 return hp;
             }
             public char getChar(){
-                return 'u';
+                return tx;
             }
-            public Unit(){
+            public Unit(char tx){
+                this.tx = tx;
                 atk = 5;
                 mvmt = 3;
                 hp = 10;

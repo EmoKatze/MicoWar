@@ -1,27 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a96aee74-56a0-43cd-b062-6648d1849abf" name="Default Changelist" comment="test commit with minimal change">
+    <list default="true" id="a96aee74-56a0-43cd-b062-6648d1849abf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/develNotes.md" beforeDir="false" afterPath="$PROJECT_DIR$/develNotes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01dev/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Stats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01dev/model/Stats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/gear/Gear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01dev/model/gear/Gear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/gear/subGear/Arm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01dev/model/gear/subGear/Arm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/gear/subGear/Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01dev/model/gear/subGear/Chest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/gear/subGear/Leg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01dev/model/gear/subGear/Leg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01dev/model/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/player/PlayerAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01dev/model/player/PlayerAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/player/subPlayer/Melee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01dev/model/player/subPlayer/Melee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/player/subPlayer/Range.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01dev/model/player/subPlayer/Range.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/player/subPlayer/Support.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01dev/model/player/subPlayer/Support.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/skill/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01dev/model/skill/Skill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/skill/subSkill/Attack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01dev/model/skill/subSkill/Attack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/skill/subSkill/Aura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01dev/model/skill/subSkill/Aura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/skill/subSkill/Debuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01dev/model/skill/subSkill/Debuff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v01p/Proto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v01proto/Proto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v02p/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v02proto/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/v02proto/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v02proto/Game.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,54 +13,57 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/develNotes.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/v01proto/Proto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="140" selection-start-line="139" selection-start-column="8" selection-end-line="140" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/v02proto/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/v01dev/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../testnummereins/src/testnummereins/DepositExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="42" column="50" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/develNotes.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor />
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/v02proto/Game.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="197">
+                  <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+                  <folding>
+                    <element signature="e#2889#2890#0" expanded="true" />
+                    <element signature="e#2922#2923#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../testnummereins/src/testnummereins/DepositExample.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="263">
+                  <caret line="312" column="8" selection-start-line="312" selection-start-column="8" selection-end-line="312" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/v01proto/Proto.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="71">
+                  <caret line="417" column="32" lean-forward="true" selection-start-line="417" selection-start-column="32" selection-end-line="417" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -95,9 +80,13 @@
       <find>menu</find>
       <find>un</find>
       <find>unit</find>
-      <find>draw</find>
       <find>screenToS</find>
       <find>cursor</find>
+      <find>switch</find>
+      <find>to</find>
+      <find>draw</find>
+      <find>curso</find>
+      <find>attack</find>
     </findStrings>
     <replaceStrings>
       <replace>board</replace>
@@ -129,6 +118,7 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/v01p/Proto.java" />
         <option value="$PROJECT_DIR$/src/main/java/v02p/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/v02proto/Game.java" />
       </list>
     </option>
   </component>
@@ -196,7 +186,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556805103947" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556812550351" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
@@ -266,7 +256,8 @@
       <workItem from="1556734640948" duration="53000" />
       <workItem from="1556735176856" duration="7699000" />
       <workItem from="1556795987266" duration="294000" />
-      <workItem from="1556804502482" duration="597000" />
+      <workItem from="1556804502482" duration="865000" />
+      <workItem from="1556811034672" duration="1514000" />
     </task>
     <task id="LOCAL-00001" summary="v02p - prototype added and developed&#10;TODO: finish prototype">
       <created>1556795206929</created>
@@ -282,37 +273,43 @@
       <option name="project" value="LOCAL" />
       <updated>1556796039794</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="moved stuff around&#10;new package organisation">
+      <created>1556805177051</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556805177051</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10061000" />
+    <option name="totallyTimeSpent" value="11843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11659919" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.11659919" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Duplicate detector" weight="0.3285968" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3285968" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3285968" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3285968" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3285968" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3285968" />
+      <window_info anchor="bottom" id="Duplicate detector" order="12" weight="0.3285968" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -325,6 +322,7 @@
       <window_info anchor="right" id="Maven" order="9" />
       <window_info anchor="right" id="Maven-2 Build" order="10" />
       <window_info anchor="right" id="Database" order="11" />
+      <window_info active="true" anchor="right" id="Run" order="12" visible="true" weight="0.32793522" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,7 +331,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v02p - prototype added and developed&#10;TODO: finish prototype" />
     <MESSAGE value="test commit with minimal change" />
-    <option name="LAST_COMMIT_MESSAGE" value="test commit with minimal change" />
+    <MESSAGE value="moved stuff around&#10;new package organisation" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved stuff around&#10;new package organisation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -514,6 +513,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/v01dev/test.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/v01dev/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/develNotes.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -527,38 +534,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../testnummereins/src/testnummereins/DepositExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="42" column="50" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/v01dev/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/v01dev/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/v01proto/Proto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="140" selection-start-line="139" selection-start-column="8" selection-end-line="140" />
+        <state relative-caret-position="71">
+          <caret line="417" column="32" lean-forward="true" selection-start-line="417" selection-start-column="32" selection-end-line="417" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../testnummereins/src/testnummereins/DepositExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="312" column="8" selection-start-line="312" selection-start-column="8" selection-end-line="312" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/v02proto/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+        <state relative-caret-position="197">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+          <folding>
+            <element signature="e#2889#2890#0" expanded="true" />
+            <element signature="e#2922#2923#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
