@@ -20,7 +20,7 @@ public class Game {
 
         boolean gameOver = false;
         for(turn = 1 ; !gameOver ; turn++){
-            //makeAMove(whosTurn());
+            makeAMove(whosTurn()); //TODO
             draw();
             gameOver = true;
 
