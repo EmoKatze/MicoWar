@@ -1,8 +1,8 @@
-package model.gear.subGear;
+package v01dev.model.gear.subGear;
 
-import model.Stats;
-import model.gear.Gear;
-import model.skill.subSkill.Aura;
+import v01dev.model.Stats;
+import v01dev.model.gear.Gear;
+import v01dev.model.skill.subSkill.Aura;
 
 public class Chest extends Gear {
 

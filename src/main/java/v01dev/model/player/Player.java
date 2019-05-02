@@ -1,12 +1,9 @@
-package model.player;
+package v01dev.model.player;
 
-import model.gear.Gear;
-import model.Stats;
-import model.gear.subGear.Arm;
-import model.gear.subGear.Chest;
-import model.gear.subGear.Leg;
-
-import java.util.List;
+import v01dev.model.Stats;
+import v01dev.model.gear.subGear.Arm;
+import v01dev.model.gear.subGear.Chest;
+import v01dev.model.gear.subGear.Leg;
 
 public abstract class Player implements PlayerAction {
     protected int id;

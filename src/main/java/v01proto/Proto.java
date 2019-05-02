@@ -1,4 +1,4 @@
-package v01p; //Version 01 Prototype
+package v01proto; //Version 01 Prototype
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -49,11 +49,11 @@ public class Proto {
         public void start() {
             model.run();
             //view.run();
-            //controller.run();
+            //v01dev.controller.run();
         }
   /*
   public Container(Model m1){
-   this.model = m1;
+   this.v01dev.model = m1;
   }
   public Container(){
    test();

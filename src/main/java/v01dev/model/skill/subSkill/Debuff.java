@@ -1,7 +1,7 @@
-package model.skill.subSkill;
+package v01dev.model.skill.subSkill;
 
-import model.Stats;
-import model.skill.Skill;
+import v01dev.model.Stats;
+import v01dev.model.skill.Skill;
 
 public class Debuff extends Skill {
 

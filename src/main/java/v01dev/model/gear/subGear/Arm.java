@@ -1,7 +1,7 @@
-package model.gear.subGear;
+package v01dev.model.gear.subGear;
 
-import model.gear.Gear;
-import model.skill.subSkill.Attack;
+import v01dev.model.gear.Gear;
+import v01dev.model.skill.subSkill.Attack;
 
 public class Arm extends Gear {
 

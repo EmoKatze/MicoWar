@@ -1,6 +1,6 @@
-package model.skill.subSkill;
+package v01dev.model.skill.subSkill;
 
-import model.skill.Skill;
+import v01dev.model.skill.Skill;
 
 public class Attack extends Skill {
 

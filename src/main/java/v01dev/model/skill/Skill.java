@@ -1,26 +1,16 @@
-package model.gear;
+package v01dev.model.skill;
 
-import model.skill.Skill;
-
-public abstract class Gear {
+public abstract class Skill {
     protected int id;
     protected String name;
     protected String details;
-    protected Skill skill;
+    protected int range;
 
-    public Gear(int id, String name, String details, Skill skill) {
+    public Skill(int id, String name, String details, int range) {
         this.id = id;
         this.name = name;
         this.details = details;
-        this.skill = skill;
-    }
-
-    protected Skill getSkill() {
-        return skill;
-    }
-
-    protected void setSkill(Skill skill) {
-        this.skill = skill;
+        this.range = range;
     }
 
     protected int getId() {
@@ -45,5 +35,13 @@ public abstract class Gear {
 
     protected void setDetails(String details) {
         this.details = details;
+    }
+
+    protected int getRange() {
+        return range;
+    }
+
+    protected void setRange(int range) {
+        this.range = range;
     }
 }

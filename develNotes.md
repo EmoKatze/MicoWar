@@ -1,7 +1,7 @@
 Developer's Notes
 ==================
 
-Game specification
+v01dev.Game specification
 ------------------
 
 Turn:
@@ -19,7 +19,7 @@ Tile: <br />
 - has Ground Type which limits movement <br />
 - Units can stand on
 
-Game Field: <br />
+v01dev.Game Field: <br />
 - 8 Tiles * 8 Tiles (128px * 128px Display is filled)
 
 Unit: <br />

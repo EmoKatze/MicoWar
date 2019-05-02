@@ -1,4 +1,4 @@
-package v02p;
+package v02proto;
 
 import java.util.Scanner;
 
@@ -20,10 +20,10 @@ public class Game {
 
         boolean gameOver = false;
         for(turn = 1 ; !gameOver ; turn++){
-            makeAMove(whosTurn()); //TODO
+            //makeAMove(whosTurn()); //TODO
             draw();
             gameOver = true;
-
+            //TEST 123456
         }
     }
 

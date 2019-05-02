@@ -1,4 +1,4 @@
-package model;
+package v01dev.model;
 
 public class Stats {
     private int attack;

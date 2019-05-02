@@ -1,8 +1,8 @@
-package model.player.subPlayer;
+package v01dev.model.player.subPlayer;
 
-import model.skill.Skill;
-import model.Stats;
-import model.player.Player;
+import v01dev.model.skill.Skill;
+import v01dev.model.Stats;
+import v01dev.model.player.Player;
 
 public class Range extends Player {
 

@@ -1,6 +1,6 @@
-package model.player;
+package v01dev.model.player;
 
-import model.skill.Skill;
+import v01dev.model.skill.Skill;
 
 public interface PlayerAction {
     boolean attackTarget(Player player);
