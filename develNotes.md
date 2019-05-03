@@ -38,6 +38,9 @@ Hardware für Gameboy
 --------------------
 Rapsberry Pi vs Microcontroller ? @emokatze
 
+Casing: Tin Box
+- Altoids Mint
+- Yougioh / Pokemon Tin Box
 
 Possible RbPi Zero: <br />
 - 10-20€ (Kabel usw) <br />
