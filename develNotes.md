@@ -36,11 +36,12 @@ Chest: <br />
 
 Hardware für Gameboy
 --------------------
-Rapsberry Pi vs Microcontroller ? @emokatze
+hier nach zubehör usw suchen : https://www.adafruit.com/
 
 Casing: Tin Box
 - Altoids Mint
 - Yougioh / Pokemon Tin Box
+- handheld aber viele unnötige features irgendwann -> LED's, Soundkarte oder so, usw
 
 Possible RbPi Zero: <br />
 - 10-20€ (Kabel usw) <br />
