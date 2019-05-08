@@ -1,0 +1,7 @@
+idea:
+Players plan their moves/strategy beforehand, then a couple of turns play out automatically
+based on movement input and attack strategy selection beforehand. this repeats until one player's
+unit looses all of its hp
+reference: toribash
+
+attacks knock units back
