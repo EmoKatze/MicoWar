@@ -23,15 +23,26 @@ public class Game {
             ap = turn;
             draw();
             makeTurn(whosTurn()); //TODO
-            gameOver = true;
+            if(turn==8){
+                draw();
+                gameOver = true;
+            }
             //TEST 123456
         }
     }
 
     private static void draw() {
         StringBuilder sb = new StringBuilder();
+        sb.append("  ");
+        for(int i = 0 ; i < 8 ; i++){
+            sb.append(i+"  ");
+        }
+        sb.append("\n");
         for(int i = 0 ; i < 8 ; i++){
             for(int j = 0 ; j < 8 ; j++){
+                if(j==0){
+                    sb.append(i+" ");
+                }
                 if(board[j][i].isSomeoneStanding()){
                     sb.append(""+board[j][i].getTextureChar()+board[j][i].getStandingUnit().getChar());
                     //if(cursor[0]==i&&cursor[1]==j){
@@ -109,10 +120,27 @@ public class Game {
 
     private static void attack(int player, char dir) {
         //TODO
+        System.out.println("Todo xD :hand mit loch:");
     }
 
     private static void move(int player) {
-        //TODO
+        //TODO Test
+        Tile selected = chooseTile(player);
+        if(selected.isSomeoneStanding()){
+            //System.out.println("Please enter where to move: x [Leerz] y");
+            Tile goal = chooseTile(player);
+            if(goal.isSomeoneStanding()){
+                System.out.println("Please choose a tile w/o a unit");
+            } else {
+                Tile.Unit temp = selected.getStandingUnit();
+                selected.setStandingUnit(null);
+                goal.setStandingUnit(temp);
+            }
+        } else {
+            System.out.println("*move: DIDNT CHOOSE A UNIT");
+        }
+
+
     }
 
     private static Tile chooseTile(int player) {
@@ -153,11 +181,11 @@ public class Game {
             return standing;
         }
         public void setStandingUnit(Unit u){
-            if(standing == null){
+            //if(standing == null){
                 standing = u;
-            } else {
-                System.out.println("*E*setStandingUnit: standing is not null: "+standing.getText());
-            }
+            //} else {
+                //System.out.println("*E*setStandingUnit: standing is not null: "+standing.getText());
+            //}
         }
         public String getCursorText(){
             if(isSomeoneStanding()){
