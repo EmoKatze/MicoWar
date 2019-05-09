@@ -36,7 +36,16 @@ Chest: <br />
 Hardware für Gameboy
 --------------------
 Rapsberry Pi vs Microcontroller ? @emokatze
-
+<br />
+RPI ZERO WLAN BATTERY ESSENTIALS KIT 40€: https://www.amazon.de/gp/product/B07H4ZSVLC/ref=ox_sc_act_title_1?smid=A2J6G16ZXL53GM&psc=1
+<br />
+CONTROLLER
+<br />
+DISPLAY
+<br />
+BLECHDOSE
+<br />
+Dann hat man alles :)
 
 Possible RbPi Zero: <br />
 - 10-20€ (Kabel usw) <br />
