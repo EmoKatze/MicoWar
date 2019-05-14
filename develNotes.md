@@ -7,7 +7,7 @@ v02dev.Game specification
 - There are abilities that can e.g spray fire on the ground to weaken magic resistance on the target who stands on the tile which is burning
 - There is also a Battle system, which gets triggered when a unit initiates attack on another unit, a few turns of pokemon-games like battle occurs until the turns run out or one of the units dies
 - The game is turn based and each player plays their turn consecutively, exept if a battle phase is occurring, then they have to make turns rapidly in succession
-- In a battle phase one player can do and recieve damage
+- In a battle phase each unit can do and recieve damage
 
 v01dev.Game specification
 ------------------
