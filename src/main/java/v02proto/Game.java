@@ -2,6 +2,7 @@ package v02proto;
 
 import java.util.Scanner;
 
+
 public class Game {
 
     static char[] players = {'$','Y'};
