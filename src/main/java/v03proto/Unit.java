@@ -1,12 +1,13 @@
 package v03proto;
 
 public class Unit {
-    public char tx;
+    private char tx;
     private int atk,hp,mvmt;
-    public String text = "Default Unit";
-    public String getText() {
+    private String text = "Default Unit";
+    String getText() {
         return text;
     }
+
     public int getAtk(){
         return atk; //ARMS
     }
@@ -16,7 +17,8 @@ public class Unit {
     public int getHP(){
         return hp;
     }
-    public char getChar(){
+
+    char getChar(){
         return tx;
     }
     public Unit(char tx){

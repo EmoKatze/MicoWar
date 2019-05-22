@@ -1,16 +1,13 @@
 package v03proto;
 
-import v02proto.Game;
-
 public class Tile {
-    char tx = '.';
-    Unit standing = null;
-    String text = "Default Tile";
-    public int x,y;
+    private char tx = '.';
+    private Unit standing = null;
+    //private String text = "Default Tile"; For Cursor
+    int x,y;
+    private Effect effect = null;
 
-    Effect effect = null;
-
-    public String getAll3Chars(){
+    String getAll3Chars(){
         StringBuilder sb = new StringBuilder();
         sb.append(getTextureChar());
         if(isSomeoneStanding()){
@@ -25,15 +22,15 @@ public class Tile {
         return sb.toString();
     }
 
-    public Effect getEffect() {
-        return effect;
-    }
-
-    public boolean isEffected(){
+    boolean isEffected(){
         return !(effect == null);
     }
 
-    public void setEffect(Effect e) {
+    Effect getEffect() {
+        return effect;
+    }
+
+    void setEffect(Effect e) {
         this.effect = e;
     }
 
@@ -48,22 +45,20 @@ public class Tile {
         y = j;
     }
 
-    public char getTexture(){
-        return tx;
-    }
-    public boolean isSomeoneStanding(){
+    boolean isSomeoneStanding(){
         return !(standing == null);
     }
-    public Unit getStandingUnit(){
+    Unit getStandingUnit(){
         return standing;
     }
-    public void setStandingUnit(Unit u){
+    void setStandingUnit(Unit u){
         //if(standing == null){
         standing = u;
         //} else {
         //System.out.println("*E*setStandingUnit: standing is not null: "+standing.getText());
         //}
     }
+    /*
     public String getCursorText(){
         if(isSomeoneStanding()){
             return text+"\nUnit: "+standing.getText();
@@ -71,29 +66,30 @@ public class Tile {
             return text;
         }
     }
-    public char getTextureChar(){
+    */
+    private char getTextureChar(){
         return tx;
     }
 
-    public static abstract class Effect{
+    static abstract class Effect{
         char texture;
         double attackFactor = 1;    //for unit standing on effected tile
         double defenseFactor = 1;   //for unit standing on effected tile
 
-        public char getTexture() {
+        char getTexture() {
             return texture;
         }
-
+        /*
         public double getAttackFactor() {
             return attackFactor;
         }
-
-        public double getDefenseFactor() {
+        */
+        double getDefenseFactor() {
             return defenseFactor;
         }
     }
-    public static class Fire extends Effect {
-        public Fire(){
+    static class Fire extends Effect {
+        Fire(){
             texture = 'f';
             attackFactor = 0.7;
             defenseFactor = 0.5;

@@ -20,6 +20,7 @@ public class Game {
     static HashMap<Character, Integer> health = new HashMap<Character, Integer>();
 
     public static void main(String[] args) {
+        mainScreen();
         init();
         Player currentPlayer = Player.Player1;
         draw();
@@ -29,6 +30,18 @@ public class Game {
             draw();
         }
 
+    }
+
+
+    private static void mainScreen() {
+        String mainscreen = " _  _  __  ___  __   _  _ \n" +
+                "( \\/ )(  )/ __)/  \\ / )( \\\n" +
+                "/ \\/ \\ )(( (__(  O )\\ /\\ /\n" +
+                "\\_)(_/(__)\\___)\\__/ (_/\\_)\n";
+        Scanner sc = new Scanner(System.in);
+        System.out.println(mainscreen);
+        System.out.println("Enter Any Key to Start");
+        sc.nextLine();
     }
 
     private static void draw() {
@@ -166,7 +179,14 @@ public class Game {
         System.out.println(getHealthDrawing());
         currentPlayer = changePlayer(currentPlayer);
         for(int i = 0; i < battleturns ; i++){
-            int damage = (int) (Math.random()*200); //100 -> 50 dmg
+            Tile selected = searchTileForPlayer(players[currentPlayer.ordinal()]);
+            assert selected != null; //Kp was das ist, ich probiere es mal aus
+            int damage = 0;
+            damage = (int) (Math.random()*200); //100 -> 50 dmg
+            if(selected.isEffected()){
+                damage /= selected.getEffect().getDefenseFactor(); //Bei defesefactor 2 -> halber dmg
+                System.out.println("Debug damage: "+damage); //temp
+            }
             int relevantHealth = health.get(players[currentPlayer.ordinal()])-damage;
             health.put(players[currentPlayer.ordinal()], relevantHealth);
             System.out.println(getHealthDrawing());
@@ -189,7 +209,8 @@ public class Game {
         String screen = " ___  ____ ___ ___ _    ____\n" +
                         " |--] |--|  |   |  |    |---\n" +
                         " |__] |  |  |   |  |___ |___\n" +
-                ""+players[Player.Player1.ordinal()]+" VS " +
+                players[Player.Player1.ordinal()] +
+                " VS " +
                 players[Player.Player2.ordinal()]+"\n";
         System.out.println(screen);
     }
@@ -288,7 +309,7 @@ public class Game {
         return index < board.length - 1;
     }
 
-    private static void move(Player currentPlayer) {
+    private static void move(Player currentPlayer) {    //TODO assert if noone is standing and in field etc
         Tile selected = searchTileForPlayer(players[currentPlayer.ordinal()]);
         if (selected.isSomeoneStanding()) {
             Tile goal = chooseTile(currentPlayer);
