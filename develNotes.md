@@ -6,7 +6,7 @@ v02dev.Game specification
 the we need's: 
 
 - moving camera <br >
-i would suggest using 24x24 tiles, with 5 tiles x 5 tiles being visible at all times.
+i would suggest using 24px x 24px tiles, with 5 tiles x 5 tiles being visible at all times.
 this gives us the option to draw good sprites but still use more than a 5x5 board.
 Because of this we need a moving camera, it could have a position and it could be moved
 by the player in the game by moving the cursor outside the screen, then the camera will follow

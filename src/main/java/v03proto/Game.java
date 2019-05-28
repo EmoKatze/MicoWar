@@ -34,7 +34,8 @@ public class Game {
 
 
     private static void mainScreen() {
-        String mainscreen = " _  _  __  ___  __   _  _ \n" +
+        String mainscreen = "" +
+                " _  _  __  ___  __   _  _ \n" +
                 "( \\/ )(  )/ __)/  \\ / )( \\\n" +
                 "/ \\/ \\ )(( (__(  O )\\ /\\ /\n" +
                 "\\_)(_/(__)\\___)\\__/ (_/\\_)\n";
@@ -154,6 +155,9 @@ public class Game {
         Scanner sc = new Scanner(System.in);
         int battleturns = 4;
         System.out.println("Please Implement Battle System, now it simulates random combat"); //TODO :)
+
+        battleScene(Player.Player1, Player.Player2);
+
         //System.out.println("Current Player: " + currentPlayer + "  " + currentPlayer.ordinal() + "  " + players[currentPlayer.ordinal()]);
         /*
         System.out.println("Please enter your Action "+currentPlayer+"\n" +
@@ -176,6 +180,7 @@ public class Game {
                 break;
         }
         */
+        /*
         System.out.println(getHealthDrawing());
         currentPlayer = changePlayer(currentPlayer);
         for(int i = 0; i < battleturns ; i++){
@@ -202,7 +207,138 @@ public class Game {
             currentPlayer = changePlayer(currentPlayer);
         }
 
+        */
+    }
 
+    enum AttackType {
+        Lighntning, Slash, Blunt
+        /*
+        Lightning   > Slash
+        Slash       > Blunt
+        Blunt       > Lightning
+         */
+    }
+
+    private static void battleScene(Player player1, Player player2) {
+        AttackType player1type = chooseAttackType(player1);
+        assert player1type != null;
+        AttackType player2type = chooseAttackType(player2);
+        assert player2type != null;
+
+        int[] damageP1P2 = calculateDamage(player1type, player2type);
+
+
+
+    }
+
+    //returns the damages that need to be subtracted from the players health
+    //check ground tile effect of both players then calcualte by the attacktypes and stats
+    //#Uff #TODO
+    //int[0]:P1     int[1]:P2
+    private static int[] calculateDamage(AttackType player1type, AttackType player2type) {
+        Tile player1Tile = searchTileForPlayer(players[0]);
+        Tile player2Tile = searchTileForPlayer(players[1]);
+        assert player1Tile != null;                                         //Kp was das ist, ich probiere es mal aus
+        assert player2Tile != null;
+
+
+        try {
+            int outcome = calculateOutcome(player1type, player2type); //0 for P1 win, 1 for draw, 2 for P2 win, -1 for error
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        int damage = 0; //TODO calculate Damage
+
+
+        if(player1Tile.isEffected()){
+            damage /= player1Tile.getEffect().getDefenseFactor(); //Bei defesefactor 2 -> halber dmg
+            System.out.println("P1 Debug damage: "+damage); //temp
+        }
+        if(player1Tile.isEffected()){
+            damage /= player1Tile.getEffect().getDefenseFactor(); //Bei defesefactor 2 -> halber dmg = dmg/defensefactor
+            System.out.println("P1 Debug damage: "+damage); //temp
+        }
+
+
+
+        //here the new refreshed health gets calculated and the old health gets overridden :)
+        int relevantHealthP1 = health.get(players[0])-damage;
+        health.put(players[0], relevantHealthP1);
+
+        int relevantHealthP2 = health.get(players[1])-damage;
+        health.put(players[1], relevantHealthP2);
+
+
+        return null;//new int[]{-1,-1}; //nur temp
+    }
+
+    enum winner {
+        P1,Draw,P2
+    }
+
+        /*
+        Lightning   > Slash
+        Slash       > Blunt
+        Blunt       > Lightning
+         */
+    //ich werde diese methode jetzt mies vergewaltigen, bitte besser neu machen future bj oder future ju TODO
+    private static int calculateOutcome(AttackType player1type, AttackType player2type) throws Exception {
+        switch(player1type){
+            case Blunt:
+                switch (player2type){   //P1: BLUNT
+                    case Blunt:         //Draw
+                        System.out.println("DIESE METHODE RETURNT JETZT: "+winner.Draw.ordinal()+" //ICH HOFFE ES IST 1");
+                        return winner.Draw.ordinal(); //Draw -> int 1
+                    case Slash:         //P2 WIN
+                        System.out.println("DIESE METHODE RETURNT JETZT: "+winner.P2.ordinal()+" //ICH HOFFE ES IST 2");
+                        return winner.P2.ordinal(); //Draw -> int 2
+                    case Lighntning:    //P1 WIN
+                        System.out.println("DIESE METHODE RETURNT JETZT: "+winner.P1.ordinal()+" //ICH HOFFE ES IST 0");
+                        return winner.P1.ordinal(); //Draw -> int 0
+                    default:
+                        System.out.println("KEINER HAT GEWONNEN PROGRAMM MÜDE");
+                        throw new Exception("calculateOutcome Error :)");
+                }
+            case Slash:
+                switch (player2type){   //P1: SLASH
+                    case Blunt:         //P1 WIN
+                        System.out.println("DIESE METHODE RETURNT JETZT: "+winner.Draw.ordinal()+" //ICH HOFFE ES IST 0");
+                        return winner.P1.ordinal(); //Draw -> int 0
+                    case Slash:         //DRAW
+                        System.out.println("DIESE METHODE RETURNT JETZT: "+winner.P2.ordinal()+" //ICH HOFFE ES IST 1");
+                        return winner.Draw.ordinal(); //Draw -> int 1
+                    case Lighntning:    //P2 WIN
+                        System.out.println("DIESE METHODE RETURNT JETZT: "+winner.P2.ordinal()+" //ICH HOFFE ES IST 2");
+                        return winner.P2.ordinal(); //Draw -> int 2
+                    default:
+                        System.out.println("KEINER HAT GEWONNEN PROGRAMM MÜDE");
+                        throw new Exception("calculateOutcome Error :)");
+                }
+            case Lighntning:                                    //Warum hält der zug jetzt an FML bin fast fertig
+                switch (player2type){   //P1: LIGHTNING
+                    case Blunt:         //P2 WIN
+                        System.out.println("DIESE METHODE RETURNT JETZT: "+winner.Draw.ordinal()+" //ICH HOFFE ES IST 2");
+                        return winner.P2.ordinal(); //P2 -> int 2
+                    case Slash:         //P1 WIN
+                        System.out.println("DIESE METHODE RETURNT JETZT: "+winner.P2.ordinal()+" //ICH HOFFE ES IST 0");
+                        return winner.P1.ordinal(); //P1-> int 0
+                    case Lighntning:    //DRAW
+                        System.out.println("DIESE METHODE RETURNT JETZT: "+winner.P2.ordinal()+" //ICH HOFFE ES IST 1");
+                        return winner.Draw.ordinal(); //Draw -> int 1
+                    default:
+                        System.out.println("KEINER HAT GEWONNEN PROGRAMM MÜDE");
+                        throw new Exception("calculateOutcome Error :)");
+                }
+            default:
+                System.out.println("error");
+                break;
+        }
+        return 0; //TEMP TODO
+    }
+
+    private static AttackType chooseAttackType(Player player1) {
+        return null; //TEMP TODO
     }
 
     private static void drawBattleScreen() {

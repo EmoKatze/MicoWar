@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a96aee74-56a0-43cd-b062-6648d1849abf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Ressources/solarized mct.gpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/develNotes.md" beforeDir="false" afterPath="$PROJECT_DIR$/develNotes.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/v03proto/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v03proto/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v03proto/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v03proto/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/v03proto/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/v03proto/Unit.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,12 +18,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/develNotes.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="210">
-                <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              <first_editor relative-caret-position="120">
+                <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
               </first_editor>
               <second_editor />
             </state>
@@ -42,13 +39,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/v03proto/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="154" column="28" selection-start-line="154" selection-start-column="28" selection-end-line="154" selection-end-column="28" />
+            <state relative-caret-position="341">
+              <caret line="336" column="17" lean-forward="true" selection-start-line="336" selection-start-column="17" selection-end-line="336" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#12702#12703#0" expanded="true" />
+                <element signature="e#12728#12729#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,19 +92,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>move</find>
-      <find>Game.Tile.</find>
-      <find>tile</find>
-      <find>Tile.</find>
-      <find>choo</find>
-      <find>*move</find>
       <find>isSom</find>
       <find>isSome</find>
       <find>isso</find>
       <find>atta</find>
       <find>ini</find>
       <find>init</find>
-      <find>health</find>
       <find>a</find>
       <find>attack</find>
       <find>draw</find>
@@ -122,7 +114,14 @@
       <find>check</find>
       <find>isE</find>
       <find>Unit</find>
+      <find>player1</find>
+      <find>players[</find>
       <find>todo</find>
+      <find>enum</find>
+      <find>health</find>
+      <find>currentpl</find>
+      <find>blunt</find>
+      <find>zug</find>
     </findStrings>
     <replaceStrings>
       <replace>board</replace>
@@ -158,8 +157,8 @@
         <option value="$PROJECT_DIR$/src/main/java/v03proto/Effect.java" />
         <option value="$PROJECT_DIR$/src/main/java/v03proto/Unit.java" />
         <option value="$PROJECT_DIR$/src/main/java/v03proto/Tile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/v03proto/Game.java" />
         <option value="$PROJECT_DIR$/develNotes.md" />
+        <option value="$PROJECT_DIR$/src/main/java/v03proto/Game.java" />
       </list>
     </option>
   </component>
@@ -181,9 +180,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1585" />
-    <option name="width" value="1630" />
+    <option name="width" value="1628" />
     <option name="height" value="1715" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -193,32 +192,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MicoWar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MicoWar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MicoWar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MicoWar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MicoWar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MicoWar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -335,7 +309,12 @@
       <workItem from="1558425875585" duration="151000" />
       <workItem from="1558445546156" duration="214000" />
       <workItem from="1558508583228" duration="454000" />
-      <workItem from="1558509831654" duration="1097000" />
+      <workItem from="1558509831654" duration="1291000" />
+      <workItem from="1558594885884" duration="2623000" />
+      <workItem from="1558719558713" duration="2121000" />
+      <workItem from="1559027031621" duration="608000" />
+      <workItem from="1559028333519" duration="617000" />
+      <workItem from="1559035961345" duration="354000" />
     </task>
     <task id="LOCAL-00001" summary="v02p - prototype added and developed&#10;TODO: finish prototype">
       <created>1556795206929</created>
@@ -386,11 +365,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557924272176</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="improved v03proto, added &quot;what we need's&quot;,">
+      <created>1558514008832</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1558514008832</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41207000" />
+    <option name="totallyTimeSpent" value="47724000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -402,7 +388,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
+    <frame x="634" y="0" width="651" height="686" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" weight="0.10364372" />
@@ -419,7 +405,7 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32952693" />
       <window_info anchor="bottom" id="Terminal" order="6" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32871974" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Duplicate detector" order="10" weight="0.3285968" />
@@ -435,9 +421,9 @@
       <window_info anchor="right" id="Maven" order="9" weight="0.32955465" />
       <window_info anchor="right" id="Maven-2 Build" order="10" />
       <window_info anchor="right" id="Database" order="11" />
-      <window_info anchor="right" id="Run" order="12" sideWeight="0.76182705" weight="0.27611336" />
+      <window_info anchor="right" id="Run" order="12" sideWeight="0.7589744" weight="0.27611336" />
       <window_info anchor="right" id="Version Control" order="13" side_tool="true" weight="0.16518219" />
-      <window_info anchor="right" id="Messages" order="14" sideWeight="0.23817292" side_tool="true" weight="0.27611336" />
+      <window_info anchor="right" id="Messages" order="14" sideWeight="0.24102564" side_tool="true" weight="0.27611336" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11659919" />
@@ -486,7 +472,8 @@
     <MESSAGE value="Move methods works, Game-Turn System doesnt :)" />
     <MESSAGE value="New v03proto, implement game rules and attack method next :)" />
     <MESSAGE value="v03proto: implemented attack and spell method, attack and spell method need debugging" />
-    <option name="LAST_COMMIT_MESSAGE" value="v03proto: implemented attack and spell method, attack and spell method need debugging" />
+    <MESSAGE value="improved v03proto, added &quot;what we need's&quot;," />
+    <option name="LAST_COMMIT_MESSAGE" value="improved v03proto, added &quot;what we need's&quot;," />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -508,12 +495,6 @@
           <line>184</line>
           <properties />
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/v03proto/Game.java</url>
-          <line>245</line>
-          <properties />
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/v02proto/Game.java</url>
@@ -732,6 +713,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/develNotes.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/v03proto/Unit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -762,26 +758,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/v03proto/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="154" column="28" selection-start-line="154" selection-start-column="28" selection-end-line="154" selection-end-column="28" />
+        <state relative-caret-position="341">
+          <caret line="336" column="17" lean-forward="true" selection-start-line="336" selection-start-column="17" selection-end-line="336" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#12702#12703#0" expanded="true" />
+            <element signature="e#12728#12729#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/develNotes.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="210">
-            <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
         </state>
       </provider>
     </entry>
