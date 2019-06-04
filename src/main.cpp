@@ -2,16 +2,11 @@
 #include <src/model/Tile.h>
 #include <src/view/View.h>
 
-Tile board [6][6];
+Tile **board = new Tile*[6];
 
-View v (board);
-
+//View v (board);
 
 int main(void)
 {
-
-
-
-
-
+    View v(board);
 }

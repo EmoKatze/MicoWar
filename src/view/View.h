@@ -8,22 +8,15 @@
 #ifndef SRC_VIEW_VIEW_H_
 #define SRC_VIEW_VIEW_H_
 
-#include <src/model/Tile.h>
+#include "src/model/Tile.h"
 
 
 class View
 {
 public:
-    View(Tile[][]);
+    View(Tile**);
     virtual ~View();
-
     Tile **vboard;
-
-
 };
-
-View::View(Tile **board){
-    vboard = board;
-}
 
 #endif /* SRC_VIEW_VIEW_H_ */
