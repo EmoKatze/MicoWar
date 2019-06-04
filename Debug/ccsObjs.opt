@@ -1,0 +1,1 @@
+"./startup_msp432p401r_gcc.o" "./system_msp432p401r.o" "./src/main.o" "./src/model/Tile.o" "./src/view/View.o" -Wl,-T"../msp432p401r.lds" -Wl,--start-group -lYAHAL_msp432 -lgcc -lnosys -lc_nano -lsupc++_nano -Wl,--end-group 
