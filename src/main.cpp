@@ -6,6 +6,7 @@ Tile board [6][6];
 
 View v (board);
 
+
 int main(void)
 {
 
